@@ -2,52 +2,43 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow:hidden;
-  background-color: #123;
+  overflow: hidden;
+  background-color: #333;
 }
 
 li {
   float: left;
 }
 
-li a {
+li a, .dropbtn {
   display: inline-block;
-  color: red;
+  color: white;
   text-align: center;
-  padding: 14px 16px
-  text-deocration: none;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-li a:hover, .dropdown:hover{
-  background-color: #111;
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
 
 li.dropdown {
   display: inline-block;
 }
 
-.dropDown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropDown-content a {
+.dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
-
-
-
-
-
-
-
-
-
